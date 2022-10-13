@@ -29,7 +29,7 @@ def dbg(name, context = vars()):
   to_json(obj,name+".dbg")
 
 def percent_of(a:int,b:int)->int:
-  return round(a/b*100)
+  return round(a/b*100) if b else 0
 
 def cmp(A_src:dict, B_src:dict)->dict:
   res = {}
